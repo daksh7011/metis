@@ -18,6 +18,7 @@ Metis is being developed and curently in WIP stage
 + Tons of icons – Font Awesome 5 integrated ✅
 
 And much more.
+
 Any Contribution is welcomed. Please open a issue if you find bugs or wanna contribute by any means.
 
 **Opensource your work, Knowledge is *free*.**
