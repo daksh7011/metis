@@ -25,7 +25,7 @@
 
     //  Backgrounds
     function metis_backgrounds() {
-        // Granim.JS
+        // granim.JS
         $('[data-gradient-bg]').each(function (index, element) {
             var granimParent = $(this),
                 granimID = 'granim-' + index + '',
