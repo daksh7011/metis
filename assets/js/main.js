@@ -40,7 +40,7 @@
             var granimInstance = new Granim({
                 element: '#' + granimID,
                 name: 'basic-gradient',
-                direction: 'left-right', // 'diagonal', 'top-bottom', 'radial'
+                direction: 'diagonal', // 'top-bottom', 'radial' , 'left-right'
                 opacity: [1, 1],
                 isPausedWhenNotInView: true,
                 states: {
@@ -53,6 +53,22 @@
 
     }
 
+    // Countdown
+    function metis_countdown() {
+        var countdown = $('.countdown[data-countdown]');
+
+        if (countdown.length > 0) {
+            countdown.each(function () {
+                var $countdown = $(this),
+                    finalDate = $countdown.data('countdonw');
+                $countdown.countdown(finalDate, function (event) {
+                    $countdown.html(event.strftime(
+                        '<div class="countdown-container row"><div class="countdown-item col-6 col-sm"><div class="number">%-D</div><span>Day%!d</span></div><div class="countdown-item col-6 col-sm"><div class="number">%H</div><span>Hours</span></div><div class="countdown-item col-6 col-sm"><div class="number">%M</div><span>Minutes</span></div><div class="countdown-item col-6 col-sm"><div class="number">%S</div><span>Seconds</span></div></div>'
+                    ));
+                });
+            });
+        }
+    }
     // window load function
     $(window).on('load', function () {
         metis_preloader();
@@ -61,6 +77,7 @@
     // document.ready function
     jQuery(document).ready(function ($) {
         metis_backgrounds();
+        metis_countdown()
     });
 
 })(jQuery);
