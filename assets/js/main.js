@@ -60,7 +60,7 @@
         if (countdown.length > 0) {
             countdown.each(function () {
                 var $countdown = $(this),
-                    finalDate = $countdown.data('countdonw');
+                    finalDate = $countdown.data('countdown');
                 $countdown.countdown(finalDate, function (event) {
                     $countdown.html(event.strftime(
                         '<div class="countdown-container row"><div class="countdown-item col-6 col-sm"><div class="number">%-D</div><span>Day%!d</span></div><div class="countdown-item col-6 col-sm"><div class="number">%H</div><span>Hours</span></div><div class="countdown-item col-6 col-sm"><div class="number">%M</div><span>Minutes</span></div><div class="countdown-item col-6 col-sm"><div class="number">%S</div><span>Seconds</span></div></div>'
