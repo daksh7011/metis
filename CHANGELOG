@@ -7,3 +7,8 @@
 21 October 2018
 -added main css file and added header
 -defined header structure in index
+
+22 October 2018
+-added css code for overlays
+-added granim js
+-added code to run granim js in main js
