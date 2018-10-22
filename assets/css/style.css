@@ -799,3 +799,14 @@ blockquote:last-child {
     height: 100%;
 }
 /* WIP */
+
+/* Countdown */
+.countdown {
+    display: table;
+}
+
+.countdown .number {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
