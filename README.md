@@ -3,6 +3,8 @@
 Metis is a open source coming soon template for your website or a starter project.
 Metis is being developed and curently in WIP stage
 
+**Demo(https://daksh7011.com/metis)**
+
 ## Features (WIP)
 + Bootstrap 4 Compatible ✅
 + Responsive Design ✅
