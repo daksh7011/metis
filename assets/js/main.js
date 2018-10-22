@@ -23,9 +23,44 @@
         $preloader.delay(preloaderDelay).fadeOut(preloaderFadeOutTime);
     }
 
+    //  Backgrounds
+    function metis_backgrounds() {
+        // Granim.JS
+        $('[data-gradient-bg]').each(function (index, element) {
+            var granimParent = $(this),
+                granimID = 'granim-' + index + '',
+                colours = granimParent.attr('data-gradient-bg'),
+                colours = colours.replace(' ', ''),
+                colours = colours.replace(/'/g, '"')
+            colours = JSON.parse(colours);
+
+            // Add canvas
+            granimParent.prepend('<canvas id="' + granimID + '"></canvas>');
+
+            var granimInstance = new Granim({
+                element: '#' + granimID,
+                name: 'basic-gradient',
+                direction: 'left-right', // 'diagonal', 'top-bottom', 'radial'
+                opacity: [1, 1],
+                isPausedWhenNotInView: true,
+                states: {
+                    "default-state": {
+                        gradients: colours
+                    }
+                }
+            });
+        });
+
+    }
+
     // window load function
     $(window).on('load', function () {
         metis_preloader();
+    });
+
+    // document.ready function
+    jQuery(document).ready(function ($) {
+        metis_backgrounds();
     });
 
 })(jQuery);
