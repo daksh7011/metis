@@ -28,3 +28,6 @@ V 0.5.1 (24 October 2018)
     -Added new file - utils.css to separate colors and various layout settings from style.css
     -Fixed layout for medium viewports. WIP for all screens.
     -Added global mask and changed code of index a bit.
+
+V 0.5.2 (24 October 2018)
+    -Reformatted style.css and added overrides for background position in util.css
