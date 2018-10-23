@@ -92,7 +92,7 @@ iframe {
     justify-content: space-between;
 }
 
-/* logo */
+/* Site logo */
 .site-logo {
     display: block;
     font-size: 1.25rem;
@@ -155,7 +155,7 @@ iframe {
     width: 100%;
 }
 
-/* navigation */
+/* Site navigation */
 .site-navigation {
     display: none;
 }
@@ -421,8 +421,282 @@ iframe {
 .header-base.style-light a:not(.btn) {
     color: #030507;
 }
-/* Dark variant will be here soon */
 
+.header-base.style-dark {
+    background: #030507;
+    color: #fff;
+}
+
+.header-base.style-dark:before,
+.header-base.style-dark:after,
+.header-base.style-dark .nav-toggle span {
+    background: #fff;
+}
+
+.header-base.style-dark a:not(.btn) {
+    color: #fff;
+}
+
+.header-base.style-semi-light {
+    background: rgba(255, 255, 255, .9);
+    color: #030507;
+}
+
+.header-base.style-semi-light:before,
+.header-base.style-semi-light:after,
+.header-base.style-semi-light .nav-toggle span {
+    background: #030507;
+}
+
+.header-base.style-semi-light a:not(.btn) {
+    color: #030507;
+}
+
+.header-base.style-semi-dark {
+    background: rgba(3, 5, 7, .9);
+    color: #fff;
+}
+
+.header-base.style-semi-dark:before,
+.header-base.style-semi-dark:after,
+.header-base.style-semi-dark .nav-toggle span {
+    background: #fff;
+}
+
+.header-base.style-semi-dark a:not(.btn) {
+    color: #fff;
+}
+
+/* Footer */
+.site-footer {
+    position: relative;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+    background-color: #fff;
+}
+
+.site-footer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #030507;
+    opacity: .12;
+    z-index: 1;
+}
+
+.site-footer .socials-icons {
+    overflow: hidden;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.site-footer .socials-icons ul {
+    display: table;
+    margin: 0;
+}
+
+.site-footer .socials-icons li {
+    display: block;
+    float: left;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.site-footer .socials-icons li:first-child {
+    margin-left: 0;
+}
+
+.site-footer .socials-icons a {
+    display: block;
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    -webkit-transition: opacity .3s ease-out;
+    -moz-transition: opacity .3s ease-out;
+    transition: opacity .3s ease-out;
+}
+
+.site-footer .social-icon:last-child {
+    margin-right: 0;
+}
+
+.site-footer .socials-icons a,
+.site-footer .socials-icons a i,
+.site-footer .socials-icons a:hover,
+.site-footer .socials-icons a:hover i {
+    color: inherit;
+}
+
+.site-footer .socials-icons ul:hover a {
+    opacity: .54;
+}
+
+.site-footer .socials-icons ul:hover a:hover {
+    opacity: 1;
+}
+
+.site-footer .copyright-container {
+    text-align: center;
+}
+
+@media (max-width: 1199px) {
+
+    .site-footer.style-mobile-dark {
+        background-color: transparent;
+        color: #fff;
+    }
+
+    .site-footer.style-mobile-dark:before {
+        background-color: #fff;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .site-footer {
+        position: unset;
+        padding-top: 0;
+        padding-bottom: 0;
+        background-color: transparent;
+    }
+
+    .site-footer:before {
+        display: none;
+    }
+
+    .site-footer .socials-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+        background: #fff;
+        position: fixed;
+        top: 100px;
+        bottom: 100px;
+        left: 0;
+        max-width: none;
+        width: 100px;
+        padding-top: 100px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        color: #030507;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        backface-visibility: hidden;
+        z-index: 5400;
+    }
+
+    .site-footer .socials-container:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: #030507;
+        opacity: .12;
+        transform: translateY(100%);
+    }
+
+    .site-footer .socials-container:after {
+        content: '';
+        position: absolute;
+        top: 1px;
+        bottom: -1px;
+        right: 0;
+        width: 1px;
+        background: #030507;
+        opacity: .12;
+        transform: translateX(100%);
+    }
+
+    .site-footer .socials-icons {
+        margin: 0;
+    }
+
+    .site-footer .socials-icons ul {
+        margin: 0 auto;
+    }
+
+    .site-footer .socials-icons li {
+        float: none;
+        margin: 0;
+        margin-top: 2rem;
+    }
+
+    .site-footer .socials-icons li:first-child {
+        margin-top: 0;
+    }
+
+    .site-footer .socials-icons a {
+        line-height: 1;
+    }
+
+    .socials-container.style-light {
+        background: #fff;
+        color: #030507;
+    }
+
+    .socials-container.style-light:before,
+    .socials-container.style-light:after {
+        background: #030507;
+    }
+
+    .socials-container.style-dark {
+        background: #030507;
+        color: #fff;
+    }
+
+    .socials-container.style-dark:before,
+    .socials-container.style-dark:after {
+        background: #fff;
+    }
+
+    .socials-container.style-semi-light {
+        background: rgba(255, 255, 255, .9);
+        color: #030507;
+    }
+
+    .socials-container.style-semi-light:before,
+    .socials-container.style-semi-light:after {
+        background: #030507;
+    }
+
+    .socials-container.style-semi-dark {
+        background: rgba(3, 5, 7, .9);
+        color: #fff;
+    }
+
+    .socials-container.style-semi-dark:before,
+    .socials-container.style-semi-dark:after {
+        background: #fff;
+    }
+
+    .site-footer .copyright-container {
+        position: fixed;
+        bottom: 25px;
+        left: 200px;
+        right: 25px;
+        max-width: none;
+        width: auto;
+        color: #fff;
+        text-align: right;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+}
 /* Preloader */
 .preloader {
     background: #fff;
