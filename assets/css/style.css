@@ -1072,7 +1072,17 @@ blockquote:last-child {
     width: 100%;
     height: 100%;
 }
-/* WIP */
+
+/* Layout */
+#home-block,
+#side-block {
+    position: relative;
+    overflow: hidden;
+}
+
+#side-block {
+    background-color: #fff;
+}
 
 /* Countdown */
 
