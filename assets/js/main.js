@@ -13,7 +13,8 @@
         preloaderDelay = 1200,
         preloaderFadeOutTime = 500,
         $backToTop = $('#back-to-top'),
-        $sideBlock = $('#side-block');
+        $sideBlock = $('#side-block'),
+        $globalMask = $('.global-mask');
 
     function getWindowWidth() {
         return Math.max($(window).width(), window.innerWidth);
