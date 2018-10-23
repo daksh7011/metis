@@ -1,0 +1,126 @@
+/*
+ * Open Source Project made by Daksh (daksh7011.com)
+ * Do NOT remove this excerpt even if you fork this or use it by any means.
+ * This project is Licenced under GNU GENERAL PUBLIC LICENSE Version 3
+ */
+
+/* Background colors */
+.bg-primary {
+    background-color: #3c55e6 !important
+}
+
+.bg-black {
+    background-color: #000
+}
+
+.bg-white {
+    background-color: #fff
+}
+
+.bg-transparent {
+    background: transparent
+}
+
+/* Background sizes */
+.bg-cover {
+    background-size: cover
+}
+
+.bg-contain {
+    background-size: contain
+}
+
+.bg-cover, .bg-contain {
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+/* Opacity definitions */
+.opacity-100 {
+    opacity: 1
+}
+
+.opacity-95 {
+    opacity: .95
+}
+
+.opacity-90 {
+    opacity: .9
+}
+
+.opacity-85 {
+    opacity: .85
+}
+
+.opacity-80 {
+    opacity: .8
+}
+
+.opacity-75 {
+    opacity: .75
+}
+
+.opacity-70 {
+    opacity: .70
+}
+
+.opacity-65 {
+    opacity: .65
+}
+
+.opacity-60 {
+    opacity: .60
+}
+
+.opacity-55 {
+    opacity: .55
+}
+
+.opacity-50 {
+    opacity: .5
+}
+
+.opacity-45 {
+    opacity: .45
+}
+
+.opacity-40 {
+    opacity: .4
+}
+
+.opacity-35 {
+    opacity: .35
+}
+
+.opacity-30 {
+    opacity: .3
+}
+
+.opacity-25 {
+    opacity: .25
+}
+
+.opacity-20 {
+    opacity: .2
+}
+
+.opacity-15 {
+    opacity: .15
+}
+
+.opacity-10 {
+    opacity: .1
+}
+
+.opacity-5 {
+    opacity: .05
+}
+
+.opacity-0 {
+    opacity: 0
+}
+
+/* Fixed layout for medium screens, not responsive yet.*/
+.fullscreen-md {
+    min-height: 100vh
+}
