@@ -18,3 +18,8 @@ V 0.4.1 (23 October 2018)
 
 V 0.4.2 (23 October 2018)
     -hotfix: added missing dependencies
+
+V 0.5 (23 October 2018)
+    -Added footer with dark, light and semi dark and semi light.
+    -Added header styles, dark, semi dark and semi light.
+    -Added footer in index.
