@@ -41,7 +41,7 @@
                 granimID = 'granim-' + index + '',
                 colors = granimParent.attr('data-gradient-bg'),
                 colors = colors.replace(' ', ''),
-                colors = colors.replace(/'/g, '"')
+                colors = colors.replace(/'/g, '"');
             colors = JSON.parse(colors);
 
             // Add canvas
@@ -50,7 +50,7 @@
             var granimInstance = new Granim({
                 element: '#' + granimID,
                 name: 'basic-gradient',
-                direction: 'diagonal', // 'top-bottom', 'radial' , 'left-right'
+                direction: 'left-right', // 'top-bottom', 'radial' , 'diagonal'
                 opacity: [1, 1],
                 isPausedWhenNotInView: true,
                 states: {
