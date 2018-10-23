@@ -15,3 +15,6 @@ V 0.4 (22 October 2018)
 
 V 0.4.1 (23 October 2018)
     -prepared project for back to top functionality
+
+V 0.4.2 (23 October 2018)
+    -hotfix: added missing dependencies
