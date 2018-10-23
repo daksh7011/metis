@@ -35,6 +35,62 @@
     background-position: center
 }
 
+/* Background position overrides */
+
+.bg-top-left {
+    background-position: top left
+}
+
+.bg-top-center {
+    background-position: top center
+}
+
+.bg-top-right {
+    background-position: top right
+}
+
+.bg-center-left {
+    background-position: center left
+}
+
+.bg-center {
+    background-position: center
+}
+
+.bg-center-right {
+    background-position: center right
+}
+
+.bg-bottom-left {
+    background-position: bottom left
+}
+
+.bg-bottom-center {
+    background-position: bottom center
+}
+
+.bg-bottom-right {
+    background-position: bottom right
+}
+
+/* Background repeat overrides */
+
+.bg-repeat {
+    background-repeat: repeat
+}
+
+.bg-repeat-x {
+    background-repeat: repeat-x
+}
+
+.bg-repeat-y {
+    background-repeat: repeat-y
+}
+
+.bg-norepeat {
+    background-repeat: no-repeat
+}
+
 /* Opacity definitions */
 .opacity-100 {
     opacity: 1
@@ -120,7 +176,27 @@
     opacity: 0
 }
 
-/* Fixed layout for medium screens, not responsive yet.*/
-.fullscreen-md {
-    min-height: 100vh
+/* Responsive height and width*/
+@media (min-width: 576px) {
+    .fullscreen-sm {
+        min-height: 100vh
+    }
+}
+
+@media (min-width: 768px) {
+    .fullscreen-md {
+        min-height: 100vh
+    }
+}
+
+@media (min-width: 992px) {
+    .fullscreen-lg {
+        min-height: 100vh
+    }
+}
+
+@media (min-width: 1200px) {
+    .fullscreen-xl {
+        min-height: 100vh
+    }
 }
