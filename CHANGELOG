@@ -1,14 +1,17 @@
-19 October 2018
--initialized project
+V 0.1 (19 October 2018)
+    -initialized project
 
-20 October 2018
--signed off project with basic html page, bootstrap and jquery plugins
+V 0.2 (20 October 2018)
+    -signed off project with basic html page, bootstrap and jquery plugins
 
-21 October 2018
--added main css file and added header
--defined header structure in index
+V 0.3 (21 October 2018)
+    -added main css file and added header
+    -defined header structure in index
 
-22 October 2018
--added css code for overlays
--added granim js
--added code to run granim js in main js
+V 0.4 (22 October 2018)
+    -added css code for overlays
+    -added granim js
+    -added code to run granim js in main js
+
+V 0.4.1 (23 October 2018)
+    -prepared project for back to top functionality
