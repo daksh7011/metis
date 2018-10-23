@@ -290,7 +290,7 @@ iframe {
 }
 
 .header-overlay-navigation .overlay-navigation a:not(.btn):hover {
-    color: rgba(255,255,255,.54);
+    color: rgba(255, 255, 255, .54);
 }
 
 .header-overlay-navigation .overlay-navigation a:not(.btn):before {
@@ -316,14 +316,14 @@ iframe {
 }
 
 .header-overlay-navigation .overlay-navigation.style-dark a:not(.btn):hover {
-    color: rgba(3,5,7,.54);
+    color: rgba(3, 5, 7, .54);
 }
 
 .header-overlay-navigation .overlay-navigation.style-dark a:not(.btn):hover:before {
     border-color: #030507;
 }
 
-@media (min-width:1200px){
+@media (min-width: 1200px) {
 
     .site-header .header-base {
         position: fixed;
@@ -697,6 +697,7 @@ iframe {
     }
 
 }
+
 /* Preloader */
 .preloader {
     background: #fff;
