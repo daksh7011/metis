@@ -35,3 +35,7 @@ V 0.5.2 (24 October 2018)
 V 0.5.3 (24 October 2018)
     -Optimized margin and padding properties in style.css
     -Replaced var with let in main.js
+
+V 0.6 (25 October 2018)
+    -Added styles for button, form and fixed layout responsiveness with viewport in style.css file.
+    -Added custom height and custom width modifiers in utils.css
