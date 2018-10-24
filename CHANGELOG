@@ -31,3 +31,7 @@ V 0.5.1 (24 October 2018)
 
 V 0.5.2 (24 October 2018)
     -Reformatted style.css and added overrides for background position in util.css
+
+V 0.5.3 (24 October 2018)
+    -Optimized margin and padding properties in style.css
+    -Replaced var with let in main.js
