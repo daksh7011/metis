@@ -12,6 +12,10 @@
 
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/utils.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+              integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+              crossorigin="anonymous">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,300i,400,400i,700,700i%7CMontserrat:100,200,300,400,500,700">
 
 
@@ -52,10 +56,7 @@
                                 <a href="#home">Home</a>
                             </li>
                             <li>
-                                <a href="#about-me">About me</a>
-                            </li>
-                            <li>
-                                <a href="#what-i-do">What I do</a>
+                                <a href="#team">The Team</a>
                             </li>
                             <li>
                                 <a href="#my-work">My work</a>
@@ -64,7 +65,10 @@
                                 <a href="#subscribe">Subscribe</a>
                             </li>
                             <li>
-                                <a href="#contact">Contact</a>
+                                <a href="#contact">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="https://gitlab.com/daksh7011/metis"><i class="fab fa-gitlab"></i> Fork it</a>
                             </li>
                         </ul>
                     </nav>
@@ -73,7 +77,51 @@
         </header>
     </div>
 
+    <!-- Back to top -->
+    <a href="#top" id="back-to-top" class="style-light">
+        <i class="fas fa-angle-up"></i>
+    </a>
 
+    <!-- Global mask -->
+    <div class="global-mask hide-global-mask">
+        <div class="overlay-inner bg-dark opacity-90"></div>
+    </div>
+
+    <!-- Home -->
+    <div id="home-block">
+
+        <section id="home" class="d-md-flex fullscreen-md">
+            <div class="overlay">
+                <!-- Specify the gradient colors here and let main.js take care of animation -->
+                <div class="overlay-inner"
+                     data-gradient-bg="[['#3c55e6','#007bff'],['#02AAB0','#00CDAC'],['#DA22FF','#007bff']]"></div>
+            </div>
+            <div class="container align-self-md-center text-center">
+                <div class="countdown text-white mb-5 mx-auto" data-countdown="2018/10/25 12:00:00"></div>
+                <h2 class="text-white mb-5">Our website is under construction. Stay tuned</h2>
+            </div>
+        </section>
+
+
+        <!-- Site footer -->
+        <footer class="site-footer">
+            <div class="container socials-container style-light">
+                <nav class="socials-icons">
+                    <ul class="mx-auto">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
+
+                    </ul>
+                </nav>
+            </div>
+            <div class="container copyright-container">
+                <p>Made with <i class="fa fa-heart"></i> in India</p>
+            </div>
+        </footer>
+
+    </div>
     <!-- JS files -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.easing.min.js"></script>
@@ -81,6 +129,7 @@
     <script src="assets/js/jquery.smooth-scroll.min.js"></script>
     <script src="assets/js/jquery.countdown.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/granim.min.js"></script>
     </body>
 </html>
 

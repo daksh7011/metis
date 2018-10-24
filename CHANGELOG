@@ -1,9 +1,37 @@
-19 October 2018
--initialized project
+V 0.1 (19 October 2018)
+    -initialized project
 
-20 October 2018
--signed off project with basic html page, bootstrap and jquery plugins
+V 0.2 (20 October 2018)
+    -signed off project with basic html page, bootstrap and jquery plugins
 
-21 October 2018
--added main css file and added header
--defined header structure in index
+V 0.3 (21 October 2018)
+    -added main css file and added header
+    -defined header structure in index
+
+V 0.4 (22 October 2018)
+    -added css code for overlays
+    -added granim js
+    -added code to run granim js in main js
+
+V 0.4.1 (23 October 2018)
+    -prepared project for back to top functionality
+
+V 0.4.2 (23 October 2018)
+    -hotfix: added missing dependencies
+
+V 0.5 (23 October 2018)
+    -Added footer with dark, light and semi dark and semi light.
+    -Added header styles, dark, semi dark and semi light.
+    -Added footer in index.
+
+V 0.5.1 (24 October 2018)
+    -Added new file - utils.css to separate colors and various layout settings from style.css
+    -Fixed layout for medium viewports. WIP for all screens.
+    -Added global mask and changed code of index a bit.
+
+V 0.5.2 (24 October 2018)
+    -Reformatted style.css and added overrides for background position in util.css
+
+V 0.5.3 (24 October 2018)
+    -Optimized margin and padding properties in style.css
+    -Replaced var with let in main.js
