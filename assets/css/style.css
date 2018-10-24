@@ -489,8 +489,7 @@ iframe {
 
 .site-footer .socials-icons {
     overflow: hidden;
-    margin: 0;
-    margin-bottom: 15px;
+    margin: 0 0 15px;
 }
 
 .site-footer .socials-icons ul {
@@ -501,8 +500,7 @@ iframe {
 .site-footer .socials-icons li {
     display: block;
     float: left;
-    margin: 0;
-    margin-left: 20px;
+    margin: 0 0 0 20px;
 }
 
 .site-footer .socials-icons li:first-child {
@@ -585,10 +583,7 @@ iframe {
         left: 0;
         max-width: none;
         width: 100px;
-        padding-top: 100px;
-        padding-bottom: 30px;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding: 100px 30px 30px;
         color: #030507;
         -webkit-backface-visibility: hidden;
         -moz-backface-visibility: hidden;
@@ -630,8 +625,7 @@ iframe {
 
     .site-footer .socials-icons li {
         float: none;
-        margin: 0;
-        margin-top: 2rem;
+        margin: 2rem 0 0;
     }
 
     .site-footer .socials-icons li:first-child {
