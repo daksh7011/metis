@@ -7,8 +7,8 @@
 (function ($) {
     "use strict";
 
-    // Vars
-    var $body = $('body'),
+    // lets
+    let $body = $('body'),
         $preloader = $('#preloader'),
         preloaderDelay = 1200,
         preloaderFadeOutTime = 500,
@@ -38,6 +38,7 @@
     function metis_backgrounds() {
         // granim.JS
         $('[data-gradient-bg]').each(function (index, element) {
+            // using let here wont work because same block scoped vars cant be re-declared
             var granimParent = $(this),
                 granimID = 'granim-' + index + '',
                 colors = granimParent.attr('data-gradient-bg'),
@@ -48,7 +49,7 @@
             // Add canvas
             granimParent.prepend('<canvas id="' + granimID + '"></canvas>');
 
-            var granimInstance = new Granim({
+            let granimInstance = new Granim({
                 element: '#' + granimID,
                 name: 'basic-gradient',
                 direction: 'left-right', // 'top-bottom', 'radial' , 'diagonal'
@@ -66,11 +67,11 @@
 
     // Countdown
     function metis_countdown() {
-        var countdown = $('.countdown[data-countdown]');
+        let countdown = $('.countdown[data-countdown]');
 
         if (countdown.length > 0) {
             countdown.each(function () {
-                var $countdown = $(this),
+                let $countdown = $(this),
                     finalDate = $countdown.data('countdown');
                 $countdown.countdown(finalDate, function (event) {
                     $countdown.html(event.strftime(
@@ -85,7 +86,8 @@
     function metis_backToTopToggle() {
         if (576 >= getWindowWidth()) {
             if (!$body.hasClass('mCS_destroyed') && !$body.hasClass('mCustomScrollbar')) {
-                var scrollpos = $(window).scrollTop();
+                // noinspection JSValidateTypes
+                let scrollpos = $(window).scrollTop();
 
                 if (scrollpos > 100) {
                     $backToTop.addClass('active');
@@ -125,7 +127,7 @@
     });
 
     // document.ready function
-    jQuery(document).ready(function ($) {
+    jQuery(document).ready(function () {
         metis_backgrounds();
         metis_countdown();
         metis_backToTopButton();
