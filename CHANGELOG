@@ -39,3 +39,9 @@ V 0.5.3 (24 October 2018)
 V 0.6 (25 October 2018)
     -Added styles for button, form and fixed layout responsiveness with viewport in style.css file.
     -Added custom height and custom width modifiers in utils.css
+
+V 0.6.1 (25 October 2018)
+    -Made lots of overhaul changes
+    -Fixed navigation in mobiles and prepared for sideblock
+    -Prepared project for custom scrollbar, reworked on back to top button
+    -Added smooth scroll for better user experience
