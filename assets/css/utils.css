@@ -31,8 +31,7 @@
 }
 
 .bg-cover, .bg-contain {
-    background-repeat: no-repeat;
-    background-position: center
+   background: no-repeat center;
 }
 
 /* Background position overrides */
