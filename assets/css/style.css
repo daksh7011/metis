@@ -253,7 +253,7 @@ iframe {
 
 .header-overlay-navigation .overlay-navigation.open {
     visibility: visible;
-    opacity: 1;
+    opacity: 1; background: transparent none;
     transition-delay: 0s, 0s;
 }
 
@@ -1334,8 +1334,7 @@ blockquote:last-child {
 
 .btn-outline-secondary {
     color: #6c757d;
-    background-color: transparent;
-    background-image: none;
+     background: transparent none;
     border-color: #6c757d;
 }
 
@@ -1371,8 +1370,7 @@ blockquote:last-child {
 
 .btn-outline-white {
     color: #fff;
-    background-color: transparent;
-    background-image: none;
+    background: transparent none;
     border-color: #fff;
 }
 
@@ -1408,8 +1406,7 @@ blockquote:last-child {
 
 .btn-outline-light {
     color: #f8f9fa;
-    background-color: transparent;
-    background-image: none;
+    background: transparent none;
     border-color: #f8f9fa;
 }
 
@@ -1445,8 +1442,7 @@ blockquote:last-child {
 
 .btn-outline-dark {
     color: #343a40;
-    background-color: transparent;
-    background-image: none;
+    background: transparent none;
     border-color: #343a40;
 }
 
@@ -1753,7 +1749,6 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
     height: calc(3.25rem + 2px);
     padding-top: 0.375rem;
     padding-bottom: 0.375rem;
-    font-size: 125%;
 }
 
 .custom-file {
