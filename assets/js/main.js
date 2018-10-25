@@ -26,9 +26,9 @@
         return Math.max($(window).width(), window.innerWidth);
     }
 
-    function getWindowHeight() {
-        return Math.max($(window).height(), window.innerHeight);
-    }
+    // function getWindowHeight() {
+    //     return Math.max($(window).height(), window.innerHeight);
+    // }
 
     // If Mobile
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -43,7 +43,7 @@
     //  Backgrounds
     function metis_backgrounds() {
         // granim.JS
-        $('[data-gradient-bg]').each(function (index, element) {
+        $('[data-gradient-bg]').each(function (index) {
             // using let here wont work because same block scoped vars cant be re-declared
             var granimParent = $(this),
                 granimID = 'granim-' + index + '',
@@ -234,7 +234,7 @@
 
         // Smooth Scroll
         function mCustomScrollbarScrollToOffset(el) {
-            var offset = headerBaseHeight,
+            let offset = headerBaseHeight,
                 elTop = $(el).offset().top - $('.mCSB_container').offset().top;
             return elTop - offset;
         }
@@ -242,7 +242,7 @@
         $smoothScrollLinks.off('click');
         $smoothScrollLinks.on('click', function (e) {
             e.preventDefault();
-            var target = $(this).attr('href');
+            let target = $(this).attr('href');
 
             if (!(1199 >= getWindowWidth() || $body.hasClass('mobile'))) {
 
