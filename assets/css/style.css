@@ -1796,6 +1796,31 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
     border-radius: 0 !important;
 }
 
+/* Divider */
+.divider {
+    display: block;
+    margin: 20px 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 1px;
+    background-color: rgba(3, 5, 7, .12);
+}
+
+.divider.divider-alt {
+    width: 54px;
+    height: 1px;
+    background-color: rgba(3, 5, 7, .12);
+}
+
+.divider.divider-alt.divider-light {
+    background-color: #fff;
+}
+
+.divider.divider-alt.divider-dark {
+    background-color: #232527;
+}
+
 /* Responsive Utilities */
 @media (max-width: 470px) {
 
