@@ -45,3 +45,6 @@ V 0.6.1 (25 October 2018)
     -Fixed navigation in mobiles and prepared for sideblock
     -Prepared project for custom scrollbar, reworked on back to top button
     -Added smooth scroll for better user experience
+
+V 0.6.2 (25 October 2018)
+    -Little Housekeeping of files.
