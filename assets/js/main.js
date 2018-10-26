@@ -4,31 +4,35 @@
  * This project is Licenced under GNU GENERAL PUBLIC LICENSE Version 3
  */
 
+// noinspection JSUnresolvedVariable
 (function ($) {
     "use strict";
 
     // lets
     let $body = $('body'),
-        $preloader = $('#preloader'),
-        preloaderDelay = 1200,
-        preloaderFadeOutTime = 500,
-        $backToTop = $('#back-to-top'),
         $sideBlock = $('#side-block'),
-        $globalMask = $('.global-mask'),
         $siteHeader = $('.site-header'),
         $headerBase = $('.header-base'),
         $siteNavigation = $('.site-navigation'),
         $navToggle = $('#navigation-toggle'),
+        closeOverlayNavAfterClick = true,
+        closeOverlayNavAfterClick_mobile = true,
+        closeClassicNavAfterClick_mobile = true,
+        $backToTop = $('#back-to-top'),
         $closeSideBlock = $('#close-side-block'),
-        $smoothScrollLinks = $('a.scrollto, .site-header a[href^="#"]');
+        $smoothScrollLinks = $('a.scrollto, .site-header a[href^="#"]'),
+        $globalMask = $('.global-mask'),
+        $preloader = $('#preloader'),
+        preloaderDelay = 1200,
+        preloaderFadeOutTime = 500;
 
     function getWindowWidth() {
         return Math.max($(window).width(), window.innerWidth);
     }
 
-    // function getWindowHeight() {
-    //     return Math.max($(window).height(), window.innerHeight);
-    // }
+    function getWindowHeight() {
+        return Math.max($(window).height(), window.innerHeight);
+    }
 
     // If Mobile
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -45,17 +49,17 @@
         // granim.JS
         $('[data-gradient-bg]').each(function (index) {
             // using let here wont work because same block scoped vars cant be re-declared
-            var granimParent = $(this),
-                granimID = 'granim-' + index + '',
-                colors = granimParent.attr('data-gradient-bg'),
-                colors = colors.replace(' ', ''),
-                colors = colors.replace(/'/g, '"');
+            const granimParent = $(this),
+                granimID = 'granim-' + index + '';
+            let colors = granimParent.attr('data-gradient-bg');
+            colors = colors.replace(' ', '');
+            colors = colors.replace(/'/g, '"');
             colors = JSON.parse(colors);
 
             // Add canvas
             granimParent.prepend('<canvas id="' + granimID + '"></canvas>');
 
-            let granimInstance = new Granim({
+            new Granim({
                 element: '#' + granimID,
                 name: 'basic-gradient',
                 direction: 'left-right', // 'top-bottom', 'radial' , 'diagonal'
@@ -143,7 +147,6 @@
 
             $siteNavigation.css('display', '');
 
-            // Custom Scrollbar
             if ($body.hasClass('mCS_destroyed') || !$body.hasClass('mCustomScrollbar')) {
                 $body.mCustomScrollbar({
                     axis: 'y',
@@ -174,12 +177,9 @@
                     }
                 });
 
-                // needs to be test
-
             }
         } else {
 
-            //toggle classes
             if ($body.hasClass('has-side-block')) {
                 $body.removeClass('has-side-block');
             }
@@ -196,17 +196,38 @@
                 $body.mCustomScrollbar('destroy');
             }
 
+            // Hide - Close side block button
             if ($closeSideBlock.hasClass('active')) {
                 $closeSideBlock.removeClass('active');
             }
 
+            // Hide - Global mask
             if ($globalMask.hasClass('active')) {
                 $globalMask.removeClass('active');
             }
 
         }
 
-        //toggle logic may not perform as intended further tests required..
+
+        // Fix first section padding
+        if ($siteHeader.hasClass('header-classic-mobile-fixed') || $siteHeader.hasClass('header-overlay-navigation')) {
+            if (1199 >= getWindowWidth()) {
+                headerBaseHeight = $headerBase.innerHeight();
+
+                $body.find('section').first().css('padding-top', '');
+                $body.find('section').first().css('padding-top', parseInt($body.find('section').first().css('padding-top'), 10) + headerBaseHeight);
+            }
+        }
+
+        // Fix overlay navigation padding
+        if ($siteHeader.hasClass('header-overlay-navigation')) {
+            headerBaseHeight = $headerBase.innerHeight();
+
+            $siteHeader.find('.overlay-navigation-container').first().css('height', '').css('margin-top', '');
+            $siteHeader.find('.overlay-navigation-container nav').first().css('min-height', '');
+            $siteHeader.find('.overlay-navigation-container').first().css('height', getWindowHeight() - parseInt(headerBaseHeight, 10)).css('margin-top', parseInt(headerBaseHeight, 10));
+            $siteHeader.find('.overlay-navigation-container nav').first().css('min-height', getWindowHeight() - parseInt(headerBaseHeight, 10));
+        }
 
         // Mobile navigation toggle
         $navToggle.off('click');
@@ -234,9 +255,8 @@
 
         // Smooth Scroll
         function mCustomScrollbarScrollToOffset(el) {
-            let offset = headerBaseHeight,
-                elTop = $(el).offset().top - $('.mCSB_container').offset().top;
-            return elTop - offset;
+            const elTop = $(el).offset().top - $('.mCSB_container').offset().top;
+            return elTop - headerBaseHeight;
         }
 
         $smoothScrollLinks.off('click');
@@ -252,17 +272,16 @@
                         $body.addClass('side-block-open');
                     }
 
-                    $('body.side-block-open').mCustomScrollbar('scrollTo', mCustomScrollbarScrollToOffset(
-                        $body.find('.mCSB_container').find(target)), {
+                    $('body.side-block-open').mCustomScrollbar('scrollTo', mCustomScrollbarScrollToOffset($body.find('.mCSB_container').find(target)), {
                         scrollInertia: 800
                     });
 
-                    // show close side block
+                    // Show - Close side block button
                     if ($sideBlock.hasClass('hide-side-block')) {
                         $closeSideBlock.addClass('active');
                     }
 
-                    // activate global mask
+                    // Show - Global mask
                     if ($globalMask.hasClass('hide-global-mask') && $sideBlock.hasClass('hide-side-block')) {
                         $globalMask.addClass('active');
                     }
@@ -273,7 +292,10 @@
                     }
                 }
 
-                //Needs further tests
+                // Close overlay navigation after menu element click
+                if (closeOverlayNavAfterClick === true && $(target).parents('.site-header') && $siteHeader.hasClass('header-overlay-navigation') && $navToggle.hasClass('open')) {
+                    $navToggle.trigger('click');
+                }
 
             } else {
 
@@ -285,25 +307,68 @@
                     preventDefault: false
                 });
 
-                //mobile nav menu might need some polishing.
+                // Close overlay navigation after menu element click - only for mobile view
+                if (closeOverlayNavAfterClick_mobile === true && $(target).parents('.site-header') && $siteHeader.hasClass('header-overlay-navigation') && $navToggle.hasClass('open')) {
+                    $navToggle.trigger('click');
+                }
+
+                // Close classic navigation after menu element click - only for mobile view
+                if (closeClassicNavAfterClick_mobile === true && $(target).parents('.site-header') && $siteHeader.hasClass('header-classic-navigation') && $navToggle.hasClass('open')) {
+                    $navToggle.trigger('click');
+                }
 
             }
         });
 
-        // Close side block button has to be implemented.
+        // Close side block button
+        $closeSideBlock.off('click');
+        $closeSideBlock.on('click', function (e) {
+            e.preventDefault();
+
+            if (!$(this).hasClass('active'))
+                return true;
+
+            // Hide - Close side block button
+            $(this).removeClass('active');
+
+            if ($body.hasClass('side-block-open')) {
+                $body.removeClass('side-block-open');
+
+                // Hide - Global mask
+                if ($globalMask.hasClass('active')) {
+                    $globalMask.removeClass('active');
+                }
+
+                // Hide - Back to top button
+                if ($backToTop.hasClass('active')) {
+                    $backToTop.removeClass('active');
+                }
+
+                setTimeout(function () {
+                    if ($body.hasClass('mCustomScrollbar')) {
+                        $body.mCustomScrollbar('scrollTo', ['top', null], {
+                            scrollInertia: 0
+                        });
+                    }
+                }, 500);
+            }
+        });
 
     }
+
+
     // window load function
     $(window).on('load', function () {
         metis_preloader();
     });
 
     // document.ready function
+    // noinspection JSUnresolvedFunction
     jQuery(document).ready(function () {
+        metis_navigation();
         metis_backgrounds();
         metis_countdown();
         metis_backToTopButton();
-        metis_navigation();
     });
 
     // window.resize function
