@@ -48,3 +48,31 @@ V 0.6.1 (25 October 2018)
 
 V 0.6.2 (25 October 2018)
     -Little Housekeeping of files.
+
+V 0.7 (25 October 2018)
+    -A major update with every file reworked and optimized!!
+    Probably longest changelog for Metis :D
+
+    utils.css
+        -added overflow styles
+        -added z-index styles
+        -added shadows styles
+        -added borders styles
+        -added text decoration, colors and font styles
+
+    style.css
+        -removed redundant units
+        -rounded off floating padding units
+        -close side block button styles
+        -styles for custom scroll bar
+        -added styles for custom blocks
+
+    main.js
+        -optimized code by removing redundant code
+        -fixed overlay navigation padding and first section padding
+        -reworked overlay navigation menu to fix several bugs
+
+    index.html
+        -added meta tags
+        -added button to close side block
+        -increased countdown days
