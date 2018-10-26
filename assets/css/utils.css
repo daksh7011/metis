@@ -31,7 +31,7 @@
 }
 
 .bg-cover, .bg-contain {
-   background: no-repeat center;
+    background: no-repeat center;
 }
 
 /* Background position overrides */
@@ -774,4 +774,177 @@
 
 .ml--auto, .mx--auto {
     margin-left: auto
+}
+
+/* Overflow */
+.overflow-hidden {
+    overflow: hidden
+}
+
+/* z-index */
+.zindex-0 {
+    z-index: 0
+}
+
+.zindex-1 {
+    z-index: 1
+}
+
+.zindex-2 {
+    z-index: 2
+}
+
+.zindex-3 {
+    z-index: 3
+}
+
+.zindex-4 {
+    z-index: 4
+}
+
+.zindex-5 {
+    z-index: 5
+}
+
+.zindex-555 {
+    z-index: 555
+}
+
+.zindex-5555 {
+    z-index: 5555
+}
+
+.zindex-n1 {
+    z-index: -1
+}
+
+/* shadows */
+.shadow-1 {
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.054)
+}
+
+.shadow-2 {
+    box-shadow: 0 7px 21px rgba(0, 0, 0, 0.054)
+}
+
+.shadow-3 {
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.054)
+}
+
+.shadow-4 {
+    box-shadow: 0 27px 54px rgba(0, 0, 0, 0.054)
+}
+
+/* Border */
+.border-top {
+    border-top-color: rgba(3, 5, 7, .12)
+}
+
+.border-bottom {
+    border-bottom-color: rgba(3, 5, 7, .12)
+}
+
+.border-left {
+    border-left-color: rgba(3, 5, 7, .12)
+}
+
+.border-right {
+    border-right-color: rgba(3, 5, 7, .12)
+}
+
+/* decorations */
+.text-underline {
+    text-decoration: underline
+}
+
+/* font family */
+.main-font {
+    font-family: 'Open Sans', sans-serif
+}
+
+.alt-font {
+    font-family: 'Montserrat', sans-serif
+}
+
+/* font weight */
+.fw-100 {
+    font-weight: 100
+}
+
+.fw-200 {
+    font-weight: 200
+}
+
+.fw-300 {
+    font-weight: 300
+}
+
+.fw-400 {
+    font-weight: 400
+}
+
+.fw-500 {
+    font-weight: 500
+}
+
+.fw-600 {
+    font-weight: 600
+}
+
+.fw-700 {
+    font-weight: 700
+}
+
+.fw-800 {
+    font-weight: 800
+}
+
+.fw-900 {
+    font-weight: 900
+}
+
+/* Text colors */
+.text-primary {
+    color: #3c55e6 !important
+}
+
+a.text-primary:hover,
+a.text-primary:focus {
+    color: #3c55e6 !important
+}
+
+.text-secondary {
+    color: #01b7ce !important
+}
+
+a.text-secondary:hover,
+a.text-secondary:focus {
+    color: #01b7ce !important
+}
+
+.text-dark {
+    color: #343a40
+}
+
+a.text-dark:hover,
+a.text-dark:focus {
+    color: #343a40
+}
+
+.text-black {
+    color: #000
+}
+
+a.text-black:hover,
+a.text-black:focus {
+    color: #000
+}
+
+.text-white {
+    color: #fff
+}
+
+a.text-white:hover,
+a.text-white:focus {
+    color: #fff
 }
