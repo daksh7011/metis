@@ -31,8 +31,7 @@
 }
 
 .bg-cover, .bg-contain {
-    background-repeat: no-repeat;
-    background-position: center
+    background: no-repeat center;
 }
 
 /* Background position overrides */
@@ -176,6 +175,280 @@
     opacity: 0
 }
 
+/* Width Definitions */
+.w--1 {
+    width: 1px
+}
+
+.w--2 {
+    width: 2px
+}
+
+.w--3 {
+    width: 3px
+}
+
+.w--4 {
+    width: 4px
+}
+
+.w--5 {
+    width: 5px
+}
+
+.w--6 {
+    width: 6px
+}
+
+.w--7 {
+    width: 7px
+}
+
+.w--8 {
+    width: 8px
+}
+
+.w--9 {
+    width: 9px
+}
+
+.w--10 {
+    width: 10px
+}
+
+.w--50 {
+    width: 50px
+}
+
+.w--100 {
+    width: 100px
+}
+
+.w--150 {
+    width: 150px
+}
+
+.w--200 {
+    width: 200px
+}
+
+.w--250 {
+    width: 250px
+}
+
+.w--300 {
+    width: 300px
+}
+
+.w--350 {
+    width: 350px
+}
+
+.w--400 {
+    width: 400px
+}
+
+.w--450 {
+    width: 450px
+}
+
+.w--500 {
+    width: 500px
+}
+
+.w--550 {
+    width: 550px
+}
+
+.w--600 {
+    width: 600px
+}
+
+.w--650 {
+    width: 650px
+}
+
+.w--700 {
+    width: 700px
+}
+
+.w--auto {
+    width: auto
+}
+
+.maxw--100 {
+    max-width: 100%
+}
+
+.minw--100 {
+    min-width: 100px
+}
+
+.minw--200 {
+    min-width: 200px
+}
+
+.minw--300 {
+    min-width: 300px
+}
+
+.minw--400 {
+    min-width: 400px
+}
+
+.minw--500 {
+    min-width: 500px
+}
+
+.minw--600 {
+    min-width: 600px
+}
+
+.minw--700 {
+    min-width: 700px
+}
+
+/* Height Definitions */
+.h--1 {
+    height: 1px
+}
+
+.h--2 {
+    height: 2px
+}
+
+.h--3 {
+    height: 3px
+}
+
+.h--4 {
+    height: 4px
+}
+
+.h--5 {
+    height: 5px
+}
+
+.h--6 {
+    height: 6px
+}
+
+.h--7 {
+    height: 7px
+}
+
+.h--8 {
+    height: 8px
+}
+
+.h--9 {
+    height: 9px
+}
+
+.h--10 {
+    height: 10px
+}
+
+.h--50 {
+    height: 50px
+}
+
+.h--100 {
+    height: 100px
+}
+
+.h--150 {
+    height: 150px
+}
+
+.h--200 {
+    height: 200px
+}
+
+.h--250 {
+    height: 250px
+}
+
+.h--300 {
+    height: 300px
+}
+
+.h--350 {
+    height: 350px
+}
+
+.h--400 {
+    height: 400px
+}
+
+.h--450 {
+    height: 450px
+}
+
+.h--500 {
+    height: 500px
+}
+
+.h--550 {
+    height: 550px
+}
+
+.h--600 {
+    height: 600px
+}
+
+.h--650 {
+    height: 650px
+}
+
+.h--700 {
+    height: 700px
+}
+
+.h--auto {
+    height: auto
+}
+
+.maxh--100 {
+    max-height: 100%
+}
+
+.minh--100 {
+    min-height: 100px
+}
+
+.minh--200 {
+    min-height: 200px
+}
+
+.minh--300 {
+    min-height: 300px
+}
+
+.minh--400 {
+    min-height: 400px
+}
+
+.minh--500 {
+    min-height: 500px
+}
+
+.minh--600 {
+    min-height: 600px
+}
+
+.minh--700 {
+    min-height: 700px
+}
+
+.minh--800 {
+    min-height: 800px
+}
+
+.fullscreen {
+    min-height: 100vh
+}
+
 /* Responsive height and width*/
 @media (min-width: 576px) {
     .fullscreen-sm {
@@ -199,4 +472,479 @@
     .fullscreen-xl {
         min-height: 100vh
     }
+}
+
+/* Custom Margin Definitions */
+
+.m--0 {
+    margin: 0
+}
+
+.mt--0, .my--0 {
+    margin-top: 0
+}
+
+.mr--0, .mx--0 {
+    margin-right: 0
+}
+
+.mb--0, .my--0 {
+    margin-bottom: 0
+}
+
+.ml--0, .mx--0 {
+    margin-left: 0
+}
+
+.m--10 {
+    margin: 10px
+}
+
+.mt--10, .my--10 {
+    margin-top: 10px
+}
+
+.mr--10, .mx--10 {
+    margin-right: 10px
+}
+
+.mb--10, .my--10 {
+    margin-bottom: 10px
+}
+
+.ml--10, .mx--10 {
+    margin-left: 10px
+}
+
+.m--15 {
+    margin: 15px
+}
+
+.mt--15, .my--15 {
+    margin-top: 15px
+}
+
+.mr--15, .mx--15 {
+    margin-right: 15px
+}
+
+.mb--15, .my--15 {
+    margin-bottom: 15px
+}
+
+.ml--15, .mx--15 {
+    margin-left: 15px
+}
+
+.m--20 {
+    margin: 20px
+}
+
+.mt--20, .my--20 {
+    margin-top: 20px
+}
+
+.mr--20, .mx--20 {
+    margin-right: 20px
+}
+
+.mb--20, .my--20 {
+    margin-bottom: 20px
+}
+
+.ml--20, .mx--20 {
+    margin-left: 20px
+}
+
+.m--30 {
+    margin: 30px
+}
+
+.mt--30, .my--30 {
+    margin-top: 30px
+}
+
+.mr--30, .mx--30 {
+    margin-right: 30px
+}
+
+.mb--30, .my--30 {
+    margin-bottom: 30px
+}
+
+.ml--30, .mx--30 {
+    margin-left: 30px
+}
+
+.m--40 {
+    margin: 40px
+}
+
+.mt--40, .my--40 {
+    margin-top: 40px
+}
+
+.mr--40, .mx--40 {
+    margin-right: 40px
+}
+
+.mb--40, .my--40 {
+    margin-bottom: 40px
+}
+
+.ml--40, .mx--40 {
+    margin-left: 40px
+}
+
+.m--50 {
+    margin: 50px
+}
+
+.mt--50, .my--50 {
+    margin-top: 50px
+}
+
+.mr--50, .mx--50 {
+    margin-right: 50px
+}
+
+.mb--50, .my--50 {
+    margin-bottom: 50px
+}
+
+.ml--50, .mx--50 {
+    margin-left: 50px
+}
+
+.m--60 {
+    margin: 60px
+}
+
+.mt--60, .my--60 {
+    margin-top: 60px
+}
+
+.mr--60, .mx--60 {
+    margin-right: 60px
+}
+
+.mb--60, .my--60 {
+    margin-bottom: 60px
+}
+
+.ml--60, .mx--60 {
+    margin-left: 60px
+}
+
+.m--70 {
+    margin: 70px
+}
+
+.mt--70, .my--70 {
+    margin-top: 70px
+}
+
+.mr--70, .mx--70 {
+    margin-right: 70px
+}
+
+.mb--70, .my--70 {
+    margin-bottom: 70px
+}
+
+.ml--70, .mx--70 {
+    margin-left: 70px
+}
+
+.m--80 {
+    margin: 80px
+}
+
+.mt--80, .my--80 {
+    margin-top: 80px
+}
+
+.mr--80, .mx--80 {
+    margin-right: 80px
+}
+
+.mb--80, .my--80 {
+    margin-bottom: 80px
+}
+
+.ml--80, .mx--80 {
+    margin-left: 80px
+}
+
+.m--90 {
+    margin: 90px
+}
+
+.mt--90, .my--90 {
+    margin-top: 90px
+}
+
+.mr--90, .mx--90 {
+    margin-right: 90px
+}
+
+.mb--90, .my--90 {
+    margin-bottom: 90px
+}
+
+.ml--90, .mx--90 {
+    margin-left: 90px
+}
+
+.m--100 {
+    margin: 100px
+}
+
+.mt--100, .my--100 {
+    margin-top: 100px
+}
+
+.mr--100, .mx--100 {
+    margin-right: 100px
+}
+
+.mb--100, .my--100 {
+    margin-bottom: 100px
+}
+
+.ml--100, .mx--100 {
+    margin-left: 100px
+}
+
+.m--110 {
+    margin: 110px
+}
+
+.mt--110, .my--110 {
+    margin-top: 110px
+}
+
+.mr--110, .mx--110 {
+    margin-right: 110px
+}
+
+.mb--110, .my--110 {
+    margin-bottom: 110px
+}
+
+.ml--110, .mx--110 {
+    margin-left: 110px
+}
+
+.m--120 {
+    margin: 120px
+}
+
+.mt--120, .my--120 {
+    margin-top: 120px
+}
+
+.mr--120, .mx--120 {
+    margin-right: 120px
+}
+
+.mb--120, .my--120 {
+    margin-bottom: 120px
+}
+
+.ml--120, .mx--120 {
+    margin-left: 120px
+}
+
+.m--auto {
+    margin: auto
+}
+
+.mt--auto, .my--auto {
+    margin-top: auto
+}
+
+.mr--auto, .mx--auto {
+    margin-right: auto
+}
+
+.mb--auto, .my--auto {
+    margin-bottom: auto
+}
+
+.ml--auto, .mx--auto {
+    margin-left: auto
+}
+
+/* Overflow */
+.overflow-hidden {
+    overflow: hidden
+}
+
+/* z-index */
+.zindex-0 {
+    z-index: 0
+}
+
+.zindex-1 {
+    z-index: 1
+}
+
+.zindex-2 {
+    z-index: 2
+}
+
+.zindex-3 {
+    z-index: 3
+}
+
+.zindex-4 {
+    z-index: 4
+}
+
+.zindex-5 {
+    z-index: 5
+}
+
+.zindex-555 {
+    z-index: 555
+}
+
+.zindex-5555 {
+    z-index: 5555
+}
+
+.zindex-n1 {
+    z-index: -1
+}
+
+/* shadows */
+.shadow-1 {
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.054)
+}
+
+.shadow-2 {
+    box-shadow: 0 7px 21px rgba(0, 0, 0, 0.054)
+}
+
+.shadow-3 {
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.054)
+}
+
+.shadow-4 {
+    box-shadow: 0 27px 54px rgba(0, 0, 0, 0.054)
+}
+
+/* Border */
+.border-top {
+    border-top-color: rgba(3, 5, 7, .12)
+}
+
+.border-bottom {
+    border-bottom-color: rgba(3, 5, 7, .12)
+}
+
+.border-left {
+    border-left-color: rgba(3, 5, 7, .12)
+}
+
+.border-right {
+    border-right-color: rgba(3, 5, 7, .12)
+}
+
+/* decorations */
+.text-underline {
+    text-decoration: underline
+}
+
+/* font family */
+.main-font {
+    font-family: 'Open Sans', sans-serif
+}
+
+.alt-font {
+    font-family: 'Montserrat', sans-serif
+}
+
+/* font weight */
+.fw-100 {
+    font-weight: 100
+}
+
+.fw-200 {
+    font-weight: 200
+}
+
+.fw-300 {
+    font-weight: 300
+}
+
+.fw-400 {
+    font-weight: 400
+}
+
+.fw-500 {
+    font-weight: 500
+}
+
+.fw-600 {
+    font-weight: 600
+}
+
+.fw-700 {
+    font-weight: 700
+}
+
+.fw-800 {
+    font-weight: 800
+}
+
+.fw-900 {
+    font-weight: 900
+}
+
+/* Text colors */
+.text-primary {
+    color: #3c55e6 !important
+}
+
+a.text-primary:hover,
+a.text-primary:focus {
+    color: #3c55e6 !important
+}
+
+.text-secondary {
+    color: #01b7ce !important
+}
+
+a.text-secondary:hover,
+a.text-secondary:focus {
+    color: #01b7ce !important
+}
+
+.text-dark {
+    color: #343a40
+}
+
+a.text-dark:hover,
+a.text-dark:focus {
+    color: #343a40
+}
+
+.text-black {
+    color: #000
+}
+
+a.text-black:hover,
+a.text-black:focus {
+    color: #000
+}
+
+.text-white {
+    color: #fff
+}
+
+a.text-white:hover,
+a.text-white:focus {
+    color: #fff
 }

@@ -6,80 +6,95 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
 
-        <title>Metis - Coming Soon Template</title>
+<head>
+    <title>Metis - Coming Soon Template</title>
 
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-        <link rel="stylesheet" href="assets/css/utils.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-              integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-              crossorigin="anonymous">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,300i,400,400i,700,700i%7CMontserrat:100,200,300,400,500,700">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="Metis is a open source coming soon template for your website or a starter project.">
+    <meta name="keywords" content="metis,coming soon,maintenance,free template,open source">
+    <meta name="author" content="Team Metis">
 
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/utils.css">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+          integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+          crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,300i,400,400i,700,700i%7CMontserrat:100,200,300,400,500,700">
 
-    </head>
-    <body>
-    <!-- Pre Loader -->
-    <div id="preloader" class="preloader preloader-dark">
-        <div class="loader-status">
-            <div class="circle-side"></div>
-        </div>
+</head>
+<body>
+
+<div id="preloader" class="preloader preloader-dark">
+    <div class="loader-status">
+        <div class="circle-side"></div>
     </div>
+</div>
 
-    <div class="site-container">
-        <div id="top"></div>
-        <!-- Site header -->
-        <header class="site-header header-classic-navigation header-classic-mobile-fixed">
-            <div class="header-base style-light">
-                <div class="header-brand">
+<div class="site-container">
 
-                    <!-- Site logo -->
-                    <a href="#" class="site-logo">
-                        <!-- Logo Placeholder -->
-                        <!--<img src="" alt="">-->
-                    </a>
+    <div id="top"></div>
 
-                    <!-- Nav toggle -->
-                    <button type="button" id="navigation-toggle" class="nav-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
+    <!-- Site header -->
+    <header class="site-header header-classic-navigation header-classic-mobile-fixed">
+        <div class="header-base style-light">
+            <div class="header-brand">
 
-                </div>
-                <div class="classic-navigation site-navigation header-collapse">
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="#home">Home</a>
-                            </li>
-                            <li>
-                                <a href="#team">The Team</a>
-                            </li>
-                            <li>
-                                <a href="#my-work">My work</a>
-                            </li>
-                            <li>
-                                <a href="#subscribe">Subscribe</a>
-                            </li>
-                            <li>
-                                <a href="#contact">Contact Us</a>
-                            </li>
-                            <li>
-                                <a href="https://gitlab.com/daksh7011/metis"><i class="fab fa-gitlab"></i> Fork it</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                <!-- Site logo -->
+                <a href="#" class="site-logo">
+                    <!-- Logo Placeholder -->
+                    <!--<img src="" alt="">-->
+                </a>
+
+                <!-- Nav toggle -->
+                <button type="button" id="navigation-toggle" class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
             </div>
-        </header>
-    </div>
+            <div class="classic-navigation site-navigation header-collapse">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#team">The Team</a>
+                        </li>
+                        <li>
+                            <a href="#my-work">My work</a>
+                        </li>
+                        <li>
+                            <a href="#subscribe">Subscribe</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="https://gitlab.com/daksh7011/metis" target="_blank"><i
+                                    class="fab fa-gitlab"></i> Fork it</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-    <!-- Back to top -->
+    <!-- Back to top button -->
     <a href="#top" id="back-to-top" class="style-light">
         <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Close side-block button -->
+    <a href="#" id="close-side-block" class="style-light">
+        <i class="fas fa-times"></i>
     </a>
 
     <!-- Global mask -->
@@ -97,39 +112,117 @@
                      data-gradient-bg="[['#3c55e6','#007bff'],['#02AAB0','#00CDAC'],['#DA22FF','#007bff']]"></div>
             </div>
             <div class="container align-self-md-center text-center">
-                <div class="countdown text-white mb-5 mx-auto" data-countdown="2018/10/25 12:00:00"></div>
-                <h2 class="text-white mb-5">Our website is under construction. Stay tuned</h2>
+                <div class="countdown text-white mb-5 mx-auto" data-countdown="2018/10/30 12:00:00"></div>
+                <h2 class="text-white mb-5">Our website is under construction. We`ll be here soon with our new awesome
+                    site.</h2>
+                <a href="#team" class="btn btn-white btn-norounded scrollto">Learn more</a>
+                <a href="#subscribe" class="btn btn-outline-white btn-norounded scrollto">Subscribe</a>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Side block -->
+    <div id="side-block" class="hide-side-block">
+
+        <section id="team" class="border-top">
+            <div class="container">
+                <h4 class="h2">Team Metis</h4>
+                <div class="divider divider-alt bg-primary my-5"></div>
+                <div class="row">
+                    <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+                        <div class="block block-boxed text-white">
+                            <div class="overlay">
+                                <div class="overlay-inner bg-image-holder bg-cover bg-bottom-left">
+                                    <img src="assets/images/daksh.jpg" alt="">
+                                </div>
+                                <div class="overlay-inner bg-primary opacity-90"></div>
+                            </div>
+                            <h4>Daksh Desai</h4>
+                            <div class="divider divider-alt bg-white my-4"></div>
+                            <p>Para coming soon</p>
+                            <ul>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="block block-boxed text-white">
+                            <div class="overlay">
+                                <div class="overlay-inner bg-image-holder bg-cover">
+                                    <img src="assets/images/mayank.jpg" alt="">
+                                </div>
+                                <div class="overlay-inner bg-primary opacity-80"></div>
+                            </div>
+                            <h4>Siddhi Agrawal</h4>
+                            <div class="divider divider-alt bg-white my-4"></div>
+                            <p>Para coming soon</p>
+                            <ul>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+                        <div class="block block-boxed text-white">
+                            <div class="overlay">
+                                <div class="overlay-inner bg-image-holder bg-cover bg-bottom-left">
+                                    <img src="assets/images/mayank.jpg" alt="">
+                                </div>
+                                <div class="overlay-inner bg-primary opacity-90"></div>
+                            </div>
+                            <h4>Mayank Malik</h4>
+                            <div class="divider divider-alt bg-white my-4"></div>
+                            <p>Para coming soon</p>
+                            <ul>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
 
 
-        <!-- Site footer -->
-        <footer class="site-footer">
-            <div class="container socials-container style-light">
-                <nav class="socials-icons">
-                    <ul class="mx-auto">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
-
-                    </ul>
-                </nav>
-            </div>
-            <div class="container copyright-container">
-                <p>Made with <i class="fa fa-heart"></i> in India</p>
-            </div>
-        </footer>
-
     </div>
-    <!-- JS files -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/jquery.smooth-scroll.min.js"></script>
-    <script src="assets/js/jquery.countdown.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/granim.min.js"></script>
-    </body>
-</html>
 
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="container socials-container style-light">
+            <nav class="socials-icons">
+                <ul class="mx-auto">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="container copyright-container">
+            <p>Made with <i class="fa fa-heart"></i> in India</p>
+        </div>
+    </footer>
+    <!--Site Block ends-->
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.easing.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/jquery.smooth-scroll.min.js"></script>
+<script src="assets/js/jquery.validate.min.js"></script>
+<script src="assets/js/jquery.form.min.js"></script>
+<script src="assets/js/jquery.countdown.min.js"></script>
+<script src="assets/js/granim.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
